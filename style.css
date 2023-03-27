@@ -1,0 +1,353 @@
+/*
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }*/
+
+    :root{
+        --primary-color:#131312;
+        --secondary-color:#0b1320;
+        --secondary-color2:#111727;
+        --text-color-green:#36e2e6;
+        --text-color-gray:#4c5262;
+    }
+    
+
+    *{
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        text-decoration: none;
+
+    }
+
+    body{
+        background-color: var(--secondary-color);
+        color: #36e2e6;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+overflow-x: hidden;
+    }
+
+    header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        z-index: 1;
+        background-color:var(--secondary-color2);
+        height: 2rem;
+        
+        
+
+
+    }
+    header .fa-bars{
+        position: absolute;
+        right: 3rem;
+        font-size: 25px;
+    }
+    .logo{
+      font-size:22px;
+      font-weight:700;
+    }
+    nav{
+        width: 100%;
+        margin-top: 2rem;
+        background-color:var(--primary-color);
+        position: absolute;
+        left: 0;
+        padding-bottom: 1rem;
+        z-index: 1000;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+  transition: all 2s;
+    }
+
+    nav ul li{
+        list-style-type: none;
+        margin-left:.5rem;
+        margin-right: 4.6rem;
+    }
+.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+   header nav ul li a{
+    display: block;
+color:var(--text-color-green);
+text-transform: uppercase;
+
+background-color:var(--secondary-color2);
+margin-top: 1rem;
+padding: 1rem;
+border-radius: 5px;
+z-index: 1000;
+width: 100%;
+   }
+   header nav ul li a:hover{
+    background-color: #0b1320;
+    color: aliceblue;
+   }
+/*
+.contact-left{
+    width: 50%;
+    background-color: #36e2e6;
+    height: 1px;
+    transform: rotate(90deg);
+    position: absolute;
+    left: -85px;
+    top: 190px;
+
+}   
+.contact-right{
+    width: 50%;
+    background-color: #36e2e6;
+    height: 1px;
+    transform: rotate(90deg);
+    position: fixed;
+    right:-85px;
+    top: 190px;
+ margin-right: 1rem;
+
+}   */
+
+#home{
+position: relative;
+top: 5rem;
+padding: 1.5rem;
+height:100vh;
+
+}
+#home  h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+img{
+    width: 100%;
+    border-radius: 30px;
+
+}
+
+.dot{
+    width:100%;
+    display: flex;
+
+    margin-top: 1.1rem;
+    position: relative;
+    
+    
+}
+
+.dot div{
+  
+    width: 10px;
+    background-color: #36e2e6;
+    margin-right: .5rem;
+    position: relative;
+    left: 45%;
+    transform: translateX(-45%);
+    height: 10px;
+    border-radius: 50%;
+}
+
+.welcome-page{
+    width: 100%;
+    border: 2px solid ;
+    height: 550px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0 0 20px 0 var(--text-color-green);
+}
+
+.welcome-text{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+
+}
+
+#products{
+ 
+ width: 100%;
+
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title h2{
+    margin-bottom: 1rem;
+}
+
+
+
+.product-sec{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #131312;
+    color: white;
+
+}
+
+.product-sec .product-box{
+    width:90%;
+
+    margin-bottom: 2rem;
+    border: 2px solid var(--text-color-green);
+    border-radius: 10px;
+    padding: .5rem;
+background-color:black;
+}
+
+.product-sec .product-box img{
+    width:100%;
+    height: 350px;
+    border-radius: 0
+
+}
+
+.product-sec .product-box .product{
+    text-align: center;
+    font-size: 20px;
+    margin: 1rem ;
+    color: #36e2e6;
+    text-transform: capitalize;
+}
+
+.product-sec .product-box .rating{
+    text-align: center;
+    color: #36e2e6;
+
+}
+.product-sec .product-box .price-box{
+    display: flex;
+   margin: 1rem 0;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+}
+
+.product-sec .product-box .price-box button{
+    margin-left: 1rem;
+    padding: .7rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #36e2e6;
+    transition: all .5s;
+
+}
+.product-sec .product-box .price-box button:hover{
+    letter-spacing: 2px;
+}
+.product-sec .product-box .price{
+color: var(--text-color-green);
+font-weight: 700;
+font-size: 20px;
+}
+.product-sec .product-box .image{
+    width: 100%;
+}
+
+#about{
+    margin-top: 7rem;
+    border-top: 2px solid var(--text-color-green);
+    padding: 1rem 0;
+    
+    border-bottom: 2px solid var(--text-color-green);
+    margin-bottom: 5rem;
+}
+
+
+.about-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+#about .image-slide{
+    padding: 1rem;
+}
+
+#about .image-slide img{
+    border: 3px solid;
+}
+
+#about .about-about{
+    padding: 1rem;
+}
+
+
+#about .about-about .name{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+#contact-me{
+    margin-top: 7rem;
+    padding: .5rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+
+#contact-me textarea{
+    width: 100%;
+    height:80px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    background-color: black;
+    border: .5px solid var(--text-color-green);
+    
+}
+#contact-me  button{
+    padding: .5rem 2rem;
+    background-color: #36e2e6;
+    border-radius: 7px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.or{
+    margin-bottom: 1rem;
+}
+
+.via{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+}
+.fa-phone{
+    margin-right: 1rem;
+}
+
+.display-con{
+    display: flex;
+}
